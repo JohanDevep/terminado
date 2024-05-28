@@ -1,0 +1,144 @@
+.tabla-clientes {
+  background-color: black;
+}
+.tabla-clientes__titulo {
+  color: white;
+  text-align: center;
+  padding: 15px 0px;
+}
+.tabla-clientes__cabecera th {
+  color: white !important;
+  background-color: rgb(255, 0, 0) !important;
+}
+.tabla-clientes tbody tr:hover td {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  background-color: rgb(215, 185, 185);
+}
+.tabla-clientes tbody tr:last-child td {
+  border-bottom: 5px solid rgb(255, 0, 0);
+}
+
+/*CSS para hacer el modal de los botones*/
+
+.tabla-clientes__modal__cuerpo {
+  background-color: black;
+  border: 1px white solid;
+}
+
+.tabla-clientes__modal__mensaje {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.tabla-clientes__modal__grupo-botones {
+  display: flex;
+  justify-content: space-between;
+}
+.tabla-clientes__modal__modal-btn {
+  width: 50%;
+  margin: 0 1%;
+}
+
+/* CSS Botón regresar */
+.tabla-clientes__btn-regresar-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  margin-bottom: 15px;
+}
+
+.tabla-clientes__btn-regresar-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: rgb(0, 0, 0, 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.tabla-clientes__btn-regresar-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    rgb(82, 0, 27) 0%,
+    rgb(163, 0, 54) 8%,
+    rgb(163, 0, 54) 92%,
+    rgb(82, 0, 27) 100%
+  );
+}
+
+.tabla-clientes__btn-regresar-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: rgb(255, 0, 0);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+@media (min-width: 768px) {
+  .tabla-clientes__btn-regresar-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.tabla-clientes__btn-regresar-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.tabla-clientes__btn-regresar-pushable:hover
+  .tabla-clientes__btn-regresar-front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.tabla-clientes__btn-regresar-pushable:active
+  .tabla-clientes__btn-regresar-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.tabla-clientes__btn-regresar-pushable:hover
+  .tabla-clientes__btn-regresar-shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.tabla-clientes__btn-regresar-pushable:active
+  .tabla-clientes__btn-regresar-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.tabla-clientes__btn-regresar-pushable:focus:not(:focus-visible) {
+  outline: none;
+}

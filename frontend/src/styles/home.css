@@ -1,0 +1,297 @@
+/* CSS DEL COMPONENTE navbarHome.js */
+.navbar-home__establecimiento-link {
+  text-decoration: none;
+}
+.home__seleccion-boton12 {
+  background-color: rgb(180, 6, 11);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.home__seleccion-boton {
+  background-color: rgb(180, 6, 11);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 10px auto;
+  display: block;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.home__seleccion-boton:hover {
+  background-color: #dd0000;
+}
+
+.home__seleccion-boton:hover {
+  background-color: #dd0000;
+}
+.navbar-home__establecimiento-btn {
+  font-size: larger;
+  position: absolute;
+  border-radius: 1000px;
+  top: 15%;
+  right: 3%;
+  background-color: rgb(255, 0, 0);
+  width: 250px;
+  height: 65px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  animation: neon-glow 1s infinite alternate;
+}
+.navbar-home__establecimiento-btn:hover {
+  background-color: rgb(221, 0, 0);
+}
+
+.navbar-home {
+  background-image: url(.././assets/images/BgHome.png);
+  height: 200px;
+  position: relative;
+  /* Esto sirve para bajar la opacidad de la parte baja del fondo en el navbar */
+
+  -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+  mask-image: linear-gradient(to bottom, black, transparent);
+}
+
+/*CSS DEL COMPONENTE QRCodeModal.JS*/
+.home__moda-qr {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+.home_moda-qr_header {
+  background-color: black;
+}
+.home_moda-qr_titulo {
+  text-align: center;
+  color: white;
+}
+
+.home_moda-qr_cuerpo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*CSS DE QRCodeScanner.js*/
+.escaner-qr__input-code {
+  text-align: center;
+  padding: 20px 0px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  width: 100%;
+}
+
+.escaner-qr__btn-unite-fiesta {
+  border-radius: 1000px;
+  background-color: rgb(180, 6, 11);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  right: 50px;
+  top: -5px;
+  height: 50px;
+  width: auto;
+  border: none;
+}
+
+/*CSS DEL COMPONENTE PRINCIPAL home.JS*/
+
+.home {
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 50px;
+}
+
+.home__titulo-neon {
+  width: 100%;
+  text-align: center;
+}
+
+.home__titulo-neon {
+  font-size: 50px;
+  color: #fff;
+  animation: neon-glow 1s infinite alternate;
+}
+
+@keyframes neon-glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.home__formulario_apodo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_formulario_input-apodo {
+  width: 50%;
+  height: 60px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 20px 0px;
+  margin-bottom: 20px;
+}
+
+.home_formulario_boton-ingresar {
+  position: relative;
+  z-index: 1;
+  margin-top: -10px;
+  border-radius: 1000px;
+  background-color: rgb(180, 6, 11);
+  color: white;
+  font-size: 20px;
+  right: 50px;
+  top: -5px;
+  width: 150px;
+  height: 60px;
+  border: none; /*Esto le quita los bordes por defecto del botón*/
+}
+
+.home_formulario_boton-ingresar:hover {
+  background-color: #dd0000;
+}
+
+/*Para el componenten BloqueImgHome.js*/
+.bloque-img-home {
+  padding-left: -100x;
+  padding-right: -100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  box-shadow: 5px 0 10px -5px white, -5px 0 10px -5px white;
+}
+.bloque-img-home__tocar-Guitarra {
+  background-image: url(.././assets/images/HomeTocarGuitarra.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 409.5px;
+  height: 409.5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bloque-img-home__home-dj {
+  background-image: url(.././assets/images/HomeDj.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 409.5px;
+  height: 409.5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bloque-img-home__titulos {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: left;
+  color: white;
+}
+
+.bloque-img-home__texto-general {
+  font-size: 25px;
+  color: white;
+}
+
+.bloque-img-home__notas-musicales-pequenas {
+  width: 25%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bloque-img-home__btn-descrubrelo {
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+  border-radius: 1000px;
+  background-color: rgb(180, 6, 11);
+  width: 200px;
+  height: 65px;
+  border: none;
+}
+
+.bloque-img-home__row3-mobile {
+  display: none;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+  /*Vista Home.js */
+  .home_formulario_input-apodo {
+    width: 65%;
+    text-align: left;
+    padding-left: 25px;
+  }
+  .home_formulario_boton-ingresar {
+    right: 50px;
+    margin-right: -50px;
+  }
+
+  /*NavbarHome.js*/
+
+  .navbar-home__establecimiento-btn {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+  }
+
+  /*Para el componenten BloqueImgHome.js*/
+  .bloque-img-home {
+    margin: 0 0 !important;
+    padding: 0 0 !important;
+  }
+  .bloque-img-home__tocar-Guitarra {
+    width: 245.7px;
+    height: 245.7px;
+  }
+  .bloque-img-home__home-dj {
+    width: 245.7px;
+    height: 245.7px;
+    margin-bottom: 25px;
+  }
+
+  .bloque-img-home__row3-mobile {
+    display: block;
+  }
+  .bloque-img-home__row2-desktop {
+    display: none;
+  }
+
+  .bloque-img-home__titulos {
+    text-align: center;
+  }
+
+  .bloque-img-home__texto-general {
+    text-align: center;
+  }
+
+  .bloque-img-home__btn-descrubrelo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+  }
+}

@@ -1,0 +1,58 @@
+.header-sitio {
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #ff4d00,
+    #ff5e00,
+    #ff5900,
+    #ff2f00
+  );
+  background-size: 200% auto;
+  color: white;
+  overflow: hidden;
+  animation: changeGradient 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid white;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+.header-sitio__logo-container {
+  width: 50px; /* Ajusta según el tamaño de tu imagen */
+}
+
+.header-sitio__logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-sitio__title-container {
+  text-align: center;
+}
+
+.header-sitio__title {
+  font-weight: bold;
+  margin: 0;
+}
+
+@keyframes changeGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+}

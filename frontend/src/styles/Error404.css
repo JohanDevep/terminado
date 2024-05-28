@@ -1,0 +1,122 @@
+.Error404-view {
+  background-image: url(.././assets/images/RedMusicNotesBg.png);
+  min-height: 100vh;
+  min-height: 100svh;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+.Error404-view__titulo {
+  color: white;
+  font-weight: bold;
+}
+.Error404-view__WhiteAnimatedJukeboxOnFire {
+  background-image: url(.././assets/images/WhiteAnimatedJukeboxOnFire.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 300px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -200px;
+  margin-bottom: -150px;
+}
+
+/* CSS Botón regresar */
+.Error404-view__btn-regresar-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  margin-bottom: 15px;
+}
+
+.Error404-view__btn-regresar-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: rgb(0, 0, 0, 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.Error404-view__btn-regresar-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    rgb(82, 0, 27) 0%,
+    rgb(163, 0, 54) 8%,
+    rgb(163, 0, 54) 92%,
+    rgb(82, 0, 27) 100%
+  );
+}
+
+.Error404-view__btn-regresar-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: rgb(255, 0, 0);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.Error404-view__btn-regresar-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.Error404-view__btn-regresar-pushable:hover .Error404-view__btn-regresar-front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.Error404-view__btn-regresar-pushable:active
+  .Error404-view__btn-regresar-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.Error404-view__btn-regresar-pushable:hover
+  .Error404-view__btn-regresar-shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.Error404-view__btn-regresar-pushable:active
+  .Error404-view__btn-regresar-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.Error404-view__btn-regresar-pushable:focus:not(:focus-visible) {
+  outline: none;
+}

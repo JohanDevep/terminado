@@ -1,0 +1,207 @@
+.mesas-admin {
+  background-color: black;
+  padding: 50px 0;
+}
+
+.mesas-admin h2 {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.mesas-admin__contenedor-border-mesas {
+  border: 5px solid red; /* Añadimos aquí un borde rojo al contenedor */
+  padding: 20px; /* Añadimos un relleno para que el contenido no toque el borde porque esa es la idea. */
+  margin: 0px 50px;
+  box-sizing: border-box; /* Incluimos el borde en el ancho y alto del contenedor */
+  border-radius: 25px;
+}
+
+.mesas-admin_btn-numero_mesas {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+.mesas-admin_modal-title-numero_mesas {
+  text-align: center;
+}
+.mesas-admin_modal-body-numero_mesas {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+.mesas-admin_modal-control-numero_mesas {
+  width: 100px;
+}
+.mesas-admin_modal-advertencia {
+  text-align: center;
+  margin: 2px;
+}
+.mesas-admin_modal-footer-numero_mesas {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.mesas-admin__contenedor-mesas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.mesas-admin__numero-mesa {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mesas-admin__mesa {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: black;
+}
+.rgb::after {
+  content: "";
+  background: linear-gradient(
+      45deg,
+      #ff0000 0%,
+      #ff9a00 10%,
+      #d0de21 20%,
+      #4fdc4a 30%,
+      #3fdad8 40%,
+      #2fc9e2 50%,
+      #1c7fee 60%,
+      #5f15f2 70%,
+      #ba0cf8 80%,
+      #fb07d9 90%,
+      #ff0000 100%
+    )
+    repeat 0% 0% / 300% 100%;
+  position: absolute;
+  inset: 0px;
+  filter: blur(8px);
+  z-index: -1;
+  animation: rgb 6s linear infinite;
+}
+
+@keyframes rgb {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.mesas-admin__mesa__qr-code {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mesas-admin__botones-mesa {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  justify-content: space-between;
+  margin: 0 100px 0 100px;
+}
+
+/*CSS para hacer el modal de los botones de las mesas*/
+
+.mesas-admin__modal__cuerpo {
+  background-color: black;
+  border: 1px white solid;
+}
+
+.mesas-admin__modal__mensaje {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.mesas-admin__modal__grupo-botones {
+  display: flex;
+  justify-content: space-between;
+}
+.mesas-admin__modal__modal-btn {
+  width: 50%;
+  margin: 0 1%;
+}
+
+/*CSS para hacer la paginación*/
+
+.mesas-admin__paginacion {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.mesas-admin__paginacion button {
+  margin: 0 5px;
+}
+
+.mesas-admin__paginacion button.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+/*Códio QR para ir al sitio web*/
+.mesas-admin__contenedor-qr-home {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  background-color: red;
+  border-radius: 10%;
+  width: 350px;
+}
+.mesas-admin__QRCodeSVG {
+  background-color: white;
+  padding: 15px 15px;
+  margin-top: 15px;
+}
+
+.mesas-admin__QRCodeSVG-texto {
+  color: white;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+  .mesas-admin__contenedor-mesas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .mesas-admin__contenedor-border-mesas {
+    margin: 0px 0px;
+    border: none;
+    padding: none;
+    box-sizing: none;
+    border-radius: none;
+  }
+  .mesas-admin__botones-mesa {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    justify-content: space-between;
+    margin: 0 0 0 0;
+  }
+}

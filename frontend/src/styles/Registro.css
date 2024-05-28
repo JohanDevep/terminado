@@ -1,0 +1,301 @@
+.bgregistro {
+  background-color: rgb(180, 5, 10);
+}
+
+.registro-vista {
+  display: flex;
+  min-height: 100vh;
+}
+
+.registro-vista__imagen-fondo {
+  flex: 1;
+  background-color: #f8f8f8;
+  background-image: url(".././assets/images/AnimatedRedJukebox.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.registro-vista__formulario {
+  flex: 1;
+  padding: 20px;
+}
+
+.registro-vista__formulario__titulo {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+  color: white;
+}
+
+.registro-vista__formulario__texto-general {
+  font-size: 16px;
+  margin-top: 10px;
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+.registro-vista__formulario__contenedor-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.registro-vista__formulario__contenedor-inputs input {
+  text-align: center;
+  text-align: center;
+  padding: 20px 0px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  font-size: 16px;
+  width: 100%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.registro-vista__formulario__contenedor-inputs input {
+  padding: 15px 20px;
+}
+
+.registro-vista__formulario__contenedor-inputs input::placeholder {
+  color: gray;
+  text-align: center;
+}
+
+.registro-vista__formulario__btn-registrarse {
+  width: 100%;
+  padding: 25px 0px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  font-size: 30px !important;
+  border: none;
+  border-radius: 60px;
+  border-radius: 60px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.registro-vista__formulario__btn-registrarse:hover {
+  animation: fizz 0.5s ease-in-out;
+  box-shadow: 0 0 5px 3px white;
+  animation: glow 0.5s ease-in-out infinite alternate;
+}
+
+/* Animaciones */
+@keyframes fizz {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0px 0px white;
+  }
+
+  100% {
+    box-shadow: 0 0 5px 3px white;
+  }
+}
+
+.registro-vista__formulario__enlace-login {
+  margin-top: 50px;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: oblique;
+  display: block;
+  text-align: center;
+}
+
+.registro-vista a {
+  text-decoration: none;
+}
+
+.registro-vista__formulario__enlace-login:hover {
+  color: gray;
+}
+.registro-vista__formulario__tipo {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.registro-vista__formulario__textarea {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#registro-vista__formulario__textarea__caracteres-restantes {
+  color: white;
+}
+
+.registro-vista__formulario__mensaje_error {
+  color: white;
+  font-weight: bold;
+}
+.map-google__highlight-input-map-link {
+  animation: highlight-input-map-link 500ms ease; /* Animación de brillo */
+}
+
+@keyframes highlight-input-map-link {
+  0% {
+    box-shadow: 0 0 10px rgb(255, 255, 0);
+    background-color: rgb(255, 166, 0);
+  }
+  50% {
+    box-shadow: 0 0 10px rgb(255, 255, 0);
+    background-color: rgb(255, 166, 0);
+  }
+  100% {
+    box-shadow: 0 0 10px rgb(255, 255, 0);
+    background-color: rgb(255, 166, 0);
+  }
+}
+.map-google__contenedor-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.map-google__btn-modal {
+  padding: 15px 15px;
+  border-radius: 15%;
+  background-color: rgb(255, 0, 0);
+  animation: box-shadow-color 2s infinite;
+}
+
+@keyframes box-shadow-color {
+  0% {
+    box-shadow: 0px 0px 20px 10px rgb(255, 85, 0);
+  }
+  50% {
+    box-shadow: 0px 0px 20px 10px rgb(255, 136, 0);
+  }
+  100% {
+    box-shadow: 0px 0px 20px 10px rgb(255, 174, 0);
+  }
+}
+
+.map-google__btn-modal:hover {
+  background: rgb(255, 0, 0);
+  box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+  animation: none;
+}
+
+.map-google__modal3 {
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 100% 0;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.map-google__modal3:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.map-google__modal-content {
+  overflow-y: scroll;
+  width: 500px;
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  box-shadow: rgba(157, 1, 1, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  background: black;
+  border: 1px white solid;
+}
+
+.map-google__title-modal {
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.map-google__title-modal h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.map-google__modal-close {
+  position: absolute;
+  bottom: 595px;
+  right: 0px;
+  font-size: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: 0.3 ease all;
+  border-radius: 5px;
+  color: gray;
+  text-decoration: none;
+}
+
+.map-google__modal-close:hover {
+  color: white;
+}
+
+.map-google__modal-footer {
+  border-radius: 4px;
+  position: relative;
+  width: 500px;
+  height: 560px;
+  max-width: 100%;
+  background: black;
+}
+
+.map-google__input-modal {
+  text-align: center;
+  padding: 15px 25px;
+  margin: 10px 0px !important;
+  border: 0px solid white;
+  border-radius: 100px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.map-google__p-modal {
+  color: white;
+  text-align: center;
+}
+
+.map-google__input-modal:hover {
+  border: 0px solid white;
+}
+
+.map-google__input-modal:focus {
+  border: 0px solid white;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+  .registro-vista__imagen-fondo {
+    display: none;
+  }
+  .map-google__modal-content {
+    width: 100vw;
+  }
+}
